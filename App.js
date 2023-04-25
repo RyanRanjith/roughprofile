@@ -13,10 +13,11 @@ function HomeScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
       <Text style={{
         marginTop: 1
-      }}>Ranjith Gopinath</Text>
+      }}>Ranjith Gopinath
+      her ois sdcdknjch </Text>
       <Image source={profile} style={{
-        width: 90,
-        height: 90,
+        width: 100,
+        height: 100,
         borderRadius: 10,
         marginTop: 10,
         marginBottom:10
@@ -27,6 +28,9 @@ function HomeScreen({ navigation }) {
       <Button  title="View Profile"
       onPress={() => navigation.navigate('Details') }/>
     </ImageBackground>
+
+    <Button title='Education'
+       onPress={()=>navigation.navigate('Education')}/>
   </View>
    </View>
    );
@@ -35,20 +39,19 @@ function HomeScreen({ navigation }) {
 
 
 
-function DetailsScreen({navigation}) {
+function DetailsScreen({}) {
   return (
     <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
       <Text style={{
 
-      }}>Details Screen</Text>
+      }}>Details dfv  g Screen</Text>
       <Text style={{
         fontSize: 12,
-        color: 'black'
+        color: 'pink'
 
       }}> here you can see my profile details</Text>
 
-       <Button title='Education'
-       onPress={()=>navigation.navigate('Education')}/>
+       
     </View>
 
   
@@ -106,10 +109,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingTop: 200,
-    //paddingTop: 200,
     paddingBottom:10,
     padding:100,
-    marginTop:10
+    marginTop:10,
+    
+
   },
   text: {
     color: 'white',
@@ -119,4 +123,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     backgroundColor: '#000000c0',
   },
+  Button: {
+    margin: 20
+  }
 })
